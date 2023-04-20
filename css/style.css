@@ -1,0 +1,25 @@
+/* alter default styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
+
+:root {
+  /* colors */
+  --main-color: #ff9f0d;
+  --text-color: #fff;
+  --other-color: #212121;
+  --second-color: #9e9e9e;
+  --bg-color: #111111;
+
+  /* fonts */
+  --big-font: 4.5rem;
+  --h2-font: 2.6rem;
+  --p-font: 1.1rem;
+}
