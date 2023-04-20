@@ -32,7 +32,7 @@ body {
   color: var(--text-color);
 }
 
-/********** HEADER  **********/
+/********** HEADER **********/
 header {
   position: fixed;
   width: 100%;
@@ -45,6 +45,11 @@ header {
   background: transparent;
   padding: 30px 14%;
   transition: all 0.5s ease;
+}
+
+header.sticky {
+  padding: 12px 14%;
+  background-color: var(--other-color);
 }
 
 .logo {
@@ -112,7 +117,7 @@ header {
   color: var(--text-color);
 }
 
-/********** HEADER  **********/
+/********** HOME **********/
 section {
   padding: 70px 14% 60px;
 }
@@ -180,4 +185,42 @@ span {
 
 .btn2:hover {
   transform: scale(1.1) translateX(12px);
+}
+
+/********** CONTAINER **********/
+.container {
+  padding: 30px 14% 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 2rem;
+  text-align: center;
+}
+
+.container-box {
+  padding: 43px;
+  background: var(--other-color);
+  border-radius: 3rem;
+}
+
+.container-box img {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+}
+
+.container-box h3 {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+.container-box a {
+  color: var(--second-color);
+  font-size: var(--p-font);
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+
+.container-box a:hover {
+  color: var(--main-color);
 }
