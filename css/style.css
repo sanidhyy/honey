@@ -22,6 +22,9 @@
   --big-font: 4.5rem;
   --h2-font: 2.6rem;
   --p-font: 1.1rem;
+
+  /* borders */
+  --border-main: #ff9f0d 0 1px 25px;
 }
 
 body {
@@ -29,6 +32,7 @@ body {
   color: var(--text-color);
 }
 
+/********** HEADER  **********/
 header {
   position: fixed;
   width: 100%;
@@ -83,7 +87,7 @@ header {
   padding: 8px 15px;
   background: var(--main-color);
   border-radius: 3rem;
-  box-shadow: #ff9f0d 0 1px 25px;
+  box-shadow: var(--border-main);
 }
 
 .nav-icons i {
@@ -106,4 +110,74 @@ header {
 .nav-icons i:hover {
   transform: scale(1.1);
   color: var(--text-color);
+}
+
+/********** HEADER  **********/
+section {
+  padding: 70px 14% 60px;
+}
+
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.home-img img {
+  width: 100%;
+  height: auto;
+}
+
+.home-text h1 {
+  font-size: var(--big-font);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 3rem;
+}
+
+span {
+  color: var(--main-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: var(--other-color);
+  color: var(--main-color);
+  font-size: var(--p-font);
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 3rem;
+  transition: all 0.5s ease;
+}
+
+.btn i {
+  vertical-align: middle;
+  margin-left: 9px;
+  font-size: 22px;
+}
+
+.btn:hover {
+  background: var(--main-color);
+  color: var(--text-color);
+  box-shadow: var(--border-main);
+}
+
+.btn2 {
+  display: inline-block;
+  margin-left: 30px;
+  font-size: var(--p-font);
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-bottom: 3px solid var(--main-color);
+  color: var(--main-color);
+  transition: all 0.5s ease;
+}
+
+.btn2:hover {
+  transform: scale(1.1) translateX(12px);
 }
