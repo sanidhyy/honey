@@ -503,3 +503,150 @@ span {
   padding: 10px;
   border-radius: 2rem;
 }
+
+/********** Responsiveness **********/
+@media only screen and (max-width: 1545px) {
+  header {
+    padding: 22px 4%;
+    transition: 0.2s;
+  }
+
+  header.sticky {
+    padding: 14px 4%;
+    transition: 0.2s;
+  }
+
+  section {
+    padding: 50px 4% 40px;
+    transition: 0.2s;
+  }
+
+  .container {
+    padding: 30px 4% 50px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  :root {
+    --big-font: 4rem;
+    --h2-font: 2.2rem;
+    --p-font: 15px;
+  }
+
+  .home {
+    height: 85vh;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  #menu-icon {
+    display: initial;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: -1000px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background: var(--other-color);
+    transition: all 0.5s ease;
+  }
+
+  .nav-list a {
+    display: block;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-left: 2px solid var(--main-color);
+  }
+
+  .nav-list.open {
+    top: 100%;
+  }
+}
+
+@media only screen and (max-width: 1045px) {
+  :root {
+    --big-font: 3.3rem;
+    --h2-font: 2rem;
+  }
+
+  .home-img img {
+    width: 100%;
+    max-width: 490px;
+    height: auto;
+  }
+
+  .about-img img {
+    width: 100%;
+    max-width: 490px;
+    height: auto;
+  }
+
+  .home {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .home {
+    grid-template-columns: 1fr;
+    height: 118vh;
+  }
+
+  .home-text {
+    padding-top: 60px;
+  }
+
+  .home-img {
+    text-align: center;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .contact-img {
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .contact-img img {
+    width: 100%;
+    max-width: 170px;
+    height: auto;
+  }
+
+  .social i {
+    margin: 0 10px;
+  }
+
+  .contact-text p {
+    max-width: 100%;
+  }
+
+  .details {
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  :root {
+    --big-font: 2.8rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .home {
+    height: 110vh;
+    gap: 0.1rem;
+  }
+}
