@@ -487,3 +487,19 @@ span {
   font-size: 28px;
   color: var(--main-color);
 }
+
+/********** Scroll to Top **********/
+.scroll {
+  position: fixed;
+  bottom: 2.2rem;
+  border-top: 2rem;
+  right: 3.2rem;
+}
+
+.scroll i {
+  font-size: 22px;
+  color: var(--text-color);
+  background: var(--main-color);
+  padding: 10px;
+  border-radius: 2rem;
+}
